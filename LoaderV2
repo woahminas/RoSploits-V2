@@ -136,7 +136,7 @@ ImageLabel.Image = "rbxassetid://8950030410"
 
 -- Scripts:
 
-local function LJGXC_fake_script() -- close.LocalScript 
+local function FUIV_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -147,15 +147,15 @@ local function LJGXC_fake_script() -- close.LocalScript
 	end)
 	
 end
-coroutine.wrap(LJGXC_fake_script)()
-local function XANRM_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(FUIV_fake_script)()
+local function FWUFC_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	script.Parent.Parent.Active = true
 	script.Parent.Parent.Draggable = true
 end
-coroutine.wrap(XANRM_fake_script)()
-local function NARBIWL_fake_script() -- Log.LocalScript 
+coroutine.wrap(FWUFC_fake_script)()
+local function XIICF_fake_script() -- Log.LocalScript 
 	local script = Instance.new('LocalScript', Log)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -171,8 +171,8 @@ local function NARBIWL_fake_script() -- Log.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NARBIWL_fake_script)()
-local function HYPLH_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(XIICF_fake_script)()
+local function YGJDOT_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local UIS = game:GetService("UserInputService")
@@ -181,7 +181,7 @@ local function HYPLH_fake_script() -- TextBox.LocalScript
 	
 	function ValidateKey(txt)
 		if txt == Key then
-			loadstring(game:HttpGet("The link for the loader"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits-V2/main/Loader1"))()
 		end
 	end
 	
@@ -195,8 +195,8 @@ local function HYPLH_fake_script() -- TextBox.LocalScript
 		ValidateKey(script.Parent.Text)
 	end)
 end
-coroutine.wrap(HYPLH_fake_script)()
-local function DQYBOI_fake_script() -- loger.LocalScript 
+coroutine.wrap(YGJDOT_fake_script)()
+local function OKSDHG_fake_script() -- loger.LocalScript 
 	local script = Instance.new('LocalScript', loger)
 
 	setclipboard("https://link-hub.net/419514/amd-radeo-software")
@@ -204,10 +204,10 @@ local function DQYBOI_fake_script() -- loger.LocalScript
 	wait(1)
 	script.Parent.Parent.loger.Text = "Copy key"
 end
-coroutine.wrap(DQYBOI_fake_script)()
-local function JNNRMAY_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(OKSDHG_fake_script)()
+local function TLORBZW_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
 end
-coroutine.wrap(JNNRMAY_fake_script)()
+coroutine.wrap(TLORBZW_fake_script)()
