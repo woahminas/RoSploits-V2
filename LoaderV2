@@ -1,0 +1,213 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Loader20 = Instance.new("ScreenGui")
+local thewholegui = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("ImageButton")
+local KeySys = Instance.new("Frame")
+local Log = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Frame = Instance.new("Frame")
+local loger = Instance.new("TextButton")
+local IsVerified = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+
+--Properties:
+
+Loader20.Name = "Loader 2.0"
+Loader20.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loader20.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+thewholegui.Name = "the whole gui"
+thewholegui.Parent = Loader20
+thewholegui.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+thewholegui.ClipsDescendants = true
+thewholegui.Position = UDim2.new(0.136034444, 0, 0.273335367, 0)
+thewholegui.Size = UDim2.new(0, 446, 0, 241)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = thewholegui
+
+TextLabel.Parent = thewholegui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.900
+TextLabel.Size = UDim2.new(0, 446, 0, 33)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "RoSploits 2.0 - Key system"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+TextLabel.TextWrapped = true
+
+close.Name = "close"
+close.Parent = TextLabel
+close.BackgroundTransparency = 1.000
+close.LayoutOrder = 5
+close.Position = UDim2.new(0.926008999, 0, 0.121212125, 0)
+close.Size = UDim2.new(0, 25, 0, 25)
+close.ZIndex = 2
+close.Image = "rbxassetid://3926305904"
+close.ImageRectOffset = Vector2.new(284, 4)
+close.ImageRectSize = Vector2.new(24, 24)
+
+KeySys.Name = "KeySys"
+KeySys.Parent = thewholegui
+KeySys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeySys.BackgroundTransparency = 1.000
+KeySys.Position = UDim2.new(0, 0, 0.136929467, 0)
+KeySys.Size = UDim2.new(0, 446, 0, 208)
+
+Log.Name = "Log"
+Log.Parent = KeySys
+Log.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Log.BackgroundTransparency = 0.900
+Log.BorderSizePixel = 0
+Log.Position = UDim2.new(0.721245408, 0, 0.8125, 0)
+Log.Size = UDim2.new(0, 110, 0, 29)
+Log.Font = Enum.Font.SourceSansBold
+Log.Text = "Submit key"
+Log.TextColor3 = Color3.fromRGB(255, 255, 255)
+Log.TextSize = 23.000
+
+TextBox.Parent = KeySys
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 0.900
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0358744413, 0, 0.8125, 0)
+TextBox.Size = UDim2.new(0, 168, 0, 29)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+
+Frame.Parent = KeySys
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.900
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.75, 0)
+Frame.Size = UDim2.new(0, 445, 0, 4)
+
+loger.Name = "loger"
+loger.Parent = KeySys
+loger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loger.BackgroundTransparency = 0.900
+loger.BorderSizePixel = 0
+loger.Position = UDim2.new(0.449944973, 0, 0.8125, 0)
+loger.Size = UDim2.new(0, 110, 0, 29)
+loger.Font = Enum.Font.SourceSansBold
+loger.Text = "Copy key"
+loger.TextColor3 = Color3.fromRGB(255, 255, 255)
+loger.TextSize = 23.000
+
+IsVerified.Name = "IsVerified"
+IsVerified.Parent = KeySys
+IsVerified.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IsVerified.BackgroundTransparency = 1.000
+IsVerified.Size = UDim2.new(0, 200, 0, 50)
+IsVerified.Visible = false
+IsVerified.Font = Enum.Font.SourceSans
+IsVerified.TextColor3 = Color3.fromRGB(0, 0, 0)
+IsVerified.TextSize = 14.000
+
+TextLabel_2.Parent = thewholegui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.236514539, 0)
+TextLabel_2.Size = UDim2.new(0, 446, 0, 33)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "If it doesnt work then dm shitass#6733"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 25.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = Loader20
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.390180081, 15, 0.375332057, 15)
+ImageLabel.Size = UDim2.new(0.168576106, 0, 0.189753324, 0)
+ImageLabel.Visible = false
+ImageLabel.Image = "rbxassetid://8950030410"
+
+-- Scripts:
+
+local function LJGXC_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent["amog us"]:Play()
+		script.Parent.Parent.Parent.Visible = false
+		wait(3)
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+	
+end
+coroutine.wrap(LJGXC_fake_script)()
+local function XANRM_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent.Parent.Active = true
+	script.Parent.Parent.Draggable = true
+end
+coroutine.wrap(XANRM_fake_script)()
+local function NARBIWL_fake_script() -- Log.LocalScript 
+	local script = Instance.new('LocalScript', Log)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	local sktrue = script.Parent.Parent.TextBox
+	
+		if sktrue.Text == "ASDFGDSADFGHJKLÑKJHKJHMKLKJHGFD" then
+			loadstring()
+	else
+	script.Parent.Parent.Parent.Parent:Destroy()
+		
+		
+		end
+	end)
+end
+coroutine.wrap(NARBIWL_fake_script)()
+local function HYPLH_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local UIS = game:GetService("UserInputService")
+	
+	local Key = "ASDFGDSADFGHJKLÑKJHKJHMKLKJHGFD"
+	
+	function ValidateKey(txt)
+		if txt == Key then
+			loadstring(game:HttpGet("The link for the loader"))()
+		end
+	end
+	
+	UIS.InputBegan:Connect(function(inpt)
+		if inpt.KeyCode == Enum.KeyCode.KeypadEnter then
+			ValidateKey(script.Parent.Text)
+		end
+	end)
+	
+	script.Parent.Parent.ValidateKey.MouseButton1Click:Connect(function()
+		ValidateKey(script.Parent.Text)
+	end)
+end
+coroutine.wrap(HYPLH_fake_script)()
+local function DQYBOI_fake_script() -- loger.LocalScript 
+	local script = Instance.new('LocalScript', loger)
+
+	setclipboard("https://link-hub.net/419514/amd-radeo-software")
+	script.Parent.Parent.loger.Text = "Copied!"
+	wait(1)
+	script.Parent.Parent.loger.Text = "Copy key"
+end
+coroutine.wrap(DQYBOI_fake_script)()
+local function JNNRMAY_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	
+end
+coroutine.wrap(JNNRMAY_fake_script)()
