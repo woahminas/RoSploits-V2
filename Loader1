@@ -4,7 +4,7 @@ repeat wait() until game:IsLoaded()
 
 if game.PlaceId == 155615604 then
 	wait(1)
-	loadstring(game:HttpGet("	loadstring(game:HttpGet('https://raw.githubusercontent.com/woahminas/RoSploits-V2/main/PrisonLife',true))()", true))()
+	loadstring(game:HttpGet("https://github.com/woahminas/RoSploits-V2/blob/main/LoaderV2", true))()
 	
 	
 
