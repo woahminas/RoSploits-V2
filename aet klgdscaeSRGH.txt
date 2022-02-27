@@ -1,1 +1,1 @@
-ASDFQWEXC9256MNOPXQHTPEXC9256MNOPXQHTPXQHT56MNOXQHT56MNOPXQHTXC9256MN
+ze = InstancGui.Parent = game.Players.LocalPlayerior = Enum.ZI:eenGui.Enabled = false.new("TeTcaorner =  UICUICorner")InstatLalocal w("ImageLabencImageLabel = Instance.nexl")
