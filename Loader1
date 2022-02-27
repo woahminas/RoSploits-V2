@@ -1,0 +1,22 @@
+
+repeat wait() until game:IsLoaded()
+
+
+if game.PlaceId == 155615604 then
+	wait(1)
+	loadstring(game:HttpGet("	loadstring(game:HttpGet('https://raw.githubusercontent.com/woahminas/RoSploits-V2/main/PrisonLife',true))()", true))()
+	
+	
+
+elseif game.PlaceId == 606849621 then
+
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits2/main/Jailbreak", true))()
+	print("New one wasnt relased yet. so you get the old one")
+
+else
+
+	loadstring(game:HttpGet("", true))()
+	wait(5)
+
+end
